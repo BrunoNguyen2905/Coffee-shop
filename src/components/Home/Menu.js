@@ -39,6 +39,7 @@ export default class Menu extends Component {
           <div className="container">
             <Title title="our menu" />
             <div className="row mb-5">
+            {/*categories */}
               <div className="col-10  mx-auto text-center">
                 {this.state.categories.map((category, index) => {
                   return (
@@ -56,6 +57,7 @@ export default class Menu extends Component {
                 })}
               </div>
             </div>
+             {/*items */}
             <div className="row">
               {this.state.coffeeItems.map(({ node }) => {
                 return (
@@ -65,14 +67,15 @@ export default class Menu extends Component {
                   >
                     <div>
                       <Img fixed={node.image.fixed} />
-                    </div>
-
+                    </div>  
                     <div className="flex-grow-1 px-3">
                       <div className="d-flex justify-content-between">
-                        <h6 className="mb-0">{node.title}</h6>
-                        <h6 className="text-yellow mb-0">${node.price}</h6>
+                        <h6 className="mb-0"><small>{node.title}</small></h6>
+                        <h6 className="text-yellow mb-0">
+                          <small>${node.price}</small>
+                        </h6>
                       </div>
-
+                      {/*item text*/} 
                       <p className="text-muted">
                         <small>{node.description.description}</small>
                       </p>

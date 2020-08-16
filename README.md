@@ -5,7 +5,7 @@
   </a>
 </p>
 <h4 align="center">
-  Deploy Project Link: <a href="https://coffee-shop-project-gatsby.netlify.app">Here</a>
+  Deploy Project Link: <a href="https://coffee-shop-project-gatsby.netlify.app" target="_blank">Here</a>
 </h1>
 <h1 align="center">
   Gatsby's default starter
